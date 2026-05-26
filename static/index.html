@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ship Fuel Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Ship Fuel Consumption Predictor</h1>
+    
+    <label for="ship_type">Ship Type:</label>
+    <select id="ship_type">
+        <option value="Oil Service Boat">Oil Service Boat</option>
+        <option value="Tanker Ship">Tanker Ship</option>
+        <option value="Surfer Boat">Surfer Boat</option>
+        <option value="Fishing Trawler">Fishing Trawler</option>
+    </select>
+
+    <label for="fuel_type">Fuel Type:</label>
+    <select id="fuel_type">
+        <option value="Diesel">Diesel</option>
+        <option value="HFO">HFO</option>
+    </select>
+
+    <label for="distance">Distance:</label>
+    <input type="number" id="distance" step="any" placeholder="e.g., 62.36" required>
+
+    <label for="actual_fuel">Actual Fuel (optional):</label>
+    <input type="number" id="actual_fuel" step="any" placeholder="e.g., 1164.2">
+
+    <button onclick="predict()">Predict Fuel Consumption</button>
+
+    <div id="result"></div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
