@@ -10,7 +10,7 @@
 Інструкція:
 1. Для роботи проекту потрібен Python версії 3.7+
 2. Потрібно встановити бібліотеки:
-`pip install fastapi uvicorn pandas scikit-learn numpy`
+`pip install fastapi uvicorn pandas scikit-learn numpy pydantic`
 3. (Опціонально) Запустити файл з тренуванням:
 `python training.py`
 4. Запустити веб-сервер:
